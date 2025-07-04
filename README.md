@@ -38,6 +38,7 @@ Taskify is a full-stack real-time task management web app built with the MERN st
    ```bash
    git clone https://github.com/gouravKJ/taskify-backend.git
    cd backend
+   
    Install dependencies:
    npm install
    
@@ -52,12 +53,10 @@ Taskify is a full-stack real-time task management web app built with the MERN st
 
    
 💻 Frontend
+2.Clone the frontend repo:
 ```bash
-
-Clone the frontend repo:
-
 git clone  https://github.com/gouravKJ/taskify1-frontend.git
-cd taskify-frontend
+cd client
 
 Install dependencies:
 npm install
@@ -68,3 +67,97 @@ REACT_APP_API=https://taskify-backend.onrender.com
 
 Start the app:
 npm start
+
+
+```
+✅ Features
+👥 User Authentication (Register, Login, Logout)
+
+🧩 Smart Task Assignment
+
+📋 Drag & Drop across Todo, In Progress, Done
+
+🌙 Dark Mode Toggle
+
+💬 Real-time Task Updates using Socket.IO
+
+📝 Activity Log Panel
+
+📱 Mobile Responsive
+
+🔒 Protected Routes with JWT
+
+---
+⚙️ Smart Assign Logic
+Smart Assign button intelligently assigns the task to the user with the least number of open (incomplete) tasks.
+
+```js
+
+const workload = {};
+users.forEach(user => {
+  workload[user._id] = tasks.filter(t => t.assigneduser?._id === user._id && t.status !== 'Done').length;
+});
+
+const leastLoaded = Object.entries(workload).sort((a, b) => a[1] - b[1])[0];
+```
+---
+🧱 Conflict Handling
+All task operations are synced in real-time using Socket.IO. If multiple users interact simultaneously:
+
+🔄 taskadded, taskupdated, and taskdeleted events update tasks for all connected clients instantly.
+
+💡 UI handles editing/deleting edge cases cleanly using React state.
+---
+
+```
+taskify/
+├── client/
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       │   ├── Navbar.js
+│       │   └── navbar.css
+│       ├── pages/
+│       │   ├── dashboard.js
+│       │   ├── dashboard.css
+│       │   ├── register.js
+│       │   ├── register.css
+│       │   └── login.js
+│       ├── App.js
+│       ├── socket.js
+│       └── .env
+├── server/
+│   └── index.js
+├── package.json
+└── README.md
+```
+
+---
+📚 Commit History
+All commits are made regularly and descriptively to track project development:
+
+feat: add smart assign logic
+
+fix: mobile drag drop bug
+
+style: improve dark mode support
+
+---
+📌 License
+This project is open-source and free to use.
+
+---
+
+##👤 Contributor
+
+**Gourav Kumar Jaiswal**  
+- [GitHub](https://github.com/gouravKJ)  
+- [LinkedIn](www.linkedin.com/in/gourav-kumar-jaiswal-b8b55a33b)
+
+  
+
+
+
+
+
+
