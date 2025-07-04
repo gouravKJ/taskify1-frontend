@@ -1,0 +1,180 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+  transition: all 0.3s ease;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+
+h2, h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+form input,
+form select,
+form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 400px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.column h3 {
+  text-align: center;
+}
+
+.task-card {
+  background: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  cursor: grab;
+}
+
+.task-card h4 {
+  margin: 0 0 5px;
+}
+
+.task-card small {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.task-card button {
+  background: #ff4d4f;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.task-card button:hover {
+  background: #e03131;
+}
+
+
+.log-panel {
+  margin-top: 30px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.log-panel ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.log-panel li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.dark {
+  background-color: #121212;
+  color: #e4e4e4;
+}
+
+.dark .dashboard-container {
+  background-color: #121212;
+  color: #e4e4e4;
+}
+
+.dark input,
+.dark select {
+  background-color: #1f1f1f;
+  
+  color: #f1f1f1;
+  border: 1px solid #218838;
+}
+
+.dark button {
+  background-color: #28a745;
+  color: white;
+}
+
+.dark button:hover {
+  background-color: #218838;
+}
+
+.dark .column {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark .task-card {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+
+.dark .task-card button {
+  background-color: #dc3545;
+}
+
+.dark .task-card button:hover {
+  background-color: #c82333;
+}
+
+.dark .log-panel {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+}
+
+.dark .log-panel li {
+  border-color: #333;
+}
