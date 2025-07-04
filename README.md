@@ -8,7 +8,7 @@ Taskify is a full-stack real-time task management web app built with the MERN st
 
 🔗 **Frontend**: [https://taskify-frontend.vercel.app](https://taskify1-frontend.vercel.app/)  
 🔗 **Backend**: [https://taskify-backend.onrender.com](https://taskify-backend-uvmk.onrender.com)  
-🎥 **Demo Video**: [Watch on YouTube](https://youtube.com/demo-taskify)
+🎥 **Demo Video**: [Watch Now](https://youtu.be/eFSGT6CQYvc)
 
 ---
 
