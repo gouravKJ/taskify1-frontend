@@ -30,7 +30,7 @@ Taskify is a full-stack real-time task management web app built with the MERN st
 - dotenv
 
 ---
-## 🚀 Setup & Installation
+### 🚀 Setup & Installation
 
 ### 🔧 Backend
 
@@ -52,7 +52,7 @@ Taskify is a full-stack real-time task management web app built with the MERN st
    npm start
 
    
-💻 Frontend
+### 💻 Frontend
 2.Clone the frontend repo:
 ```bash
 git clone  https://github.com/gouravKJ/taskify1-frontend.git
@@ -70,7 +70,7 @@ npm start
 
 
 ```
-✅ Features
+### ✅ Features
 👥 User Authentication (Register, Login, Logout)
 
 🧩 Smart Task Assignment
@@ -88,7 +88,7 @@ npm start
 🔒 Protected Routes with JWT
 
 ---
-⚙️ Smart Assign Logic
+### ⚙️ Smart Assign Logic
 Smart Assign button intelligently assigns the task to the user with the least number of open (incomplete) tasks.
 
 ```js
@@ -101,7 +101,7 @@ users.forEach(user => {
 const leastLoaded = Object.entries(workload).sort((a, b) => a[1] - b[1])[0];
 ```
 ---
-🧱 Conflict Handling
+### 🧱 Conflict Handling
 All task operations are synced in real-time using Socket.IO. If multiple users interact simultaneously:
 
 🔄 taskadded, taskupdated, and taskdeleted events update tasks for all connected clients instantly.
@@ -133,7 +133,8 @@ taskify/
 ```
 
 ---
-📚 Commit History
+### 📚 Commit History
+
 All commits are made regularly and descriptively to track project development:
 
 feat: add smart assign logic
@@ -143,12 +144,12 @@ fix: mobile drag drop bug
 style: improve dark mode support
 
 ---
-📌 License
+### 📌 License
 This project is open-source and free to use.
 
 ---
 
-##👤 Contributor
+### 👤 Contributor
 
 **Gourav Kumar Jaiswal**  
 - [GitHub](https://github.com/gouravKJ)  
